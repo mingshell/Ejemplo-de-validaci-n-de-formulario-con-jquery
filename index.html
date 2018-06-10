@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es" dir="ltr">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Validador Huico</title>
+
+
+	<style>
+		input{
+			padding: 10px;
+			width: 500px;
+			margin: 10px;
+		}
+	</style>
+	
+
+</head>
+<body>
+		<h1>Validacion de Formulario</h1>
+		<form name="formu" id="formu" action="#" method="post" class="formu">
+			<input type="text" name="campo1" placeholder="ingresa una palabra de 8 a 15 letras minusculas">
+			<input type="number" name="campo2" placeholder="ingresa numeros, sin la letra e">
+			<input type="password" name="campo3" placeholder="ingresa una contraseña de 8 a 10 caracteres, sin signos">
+			<input type="email" name="campo4" placeholder="Ingresa un correo Valido">
+			
+			<input type="submit" name="enviar" value="enviar">
+		</form>
+</body>
+</html>
+
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#formu').valida();
+		}) 	
+	</script>
+</body>
+</html>
